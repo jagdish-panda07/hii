@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood-Based Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>How are you feeling today?</h1>
+        <div class="mood-selector">
+            <button class="mood-button" data-mood="happy">😊 Happy</button>
+            <button class="mood-button" data-mood="sad">😞 Sad</button>
+            <button class="mood-button" data-mood="excited">🤩 Excited</button>
+            <button class="mood-button" data-mood="relaxed">😌 Relaxed</button>
+            <button class="mood-button" data-mood="energetic">⚡ Energetic</button>
+            <button class="mood-button" data-mood="calm">🧘 Calm</button>
+            </div>
+
+        <div id="recommendations" class="hidden">
+            <h2>Recommendations for your mood:</h2>
+            <div id="movie-recommendations">
+                <h3>Movies:</h3>
+                <ul id="movie-list"></ul>
+            </div>
+            <div id="series-recommendations">
+                <h3>Web Series:</h3>
+                <ul id="series-list"></ul>
+            </div>
+            <div id="anime-recommendations">
+                <h3>Anime:</h3>
+                <ul id="anime-list"></ul>
+            </div>
+            <div id="music-recommendations">
+                <h3>Music:</h3>
+                <ul id="music-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
